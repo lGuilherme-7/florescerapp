@@ -1,0 +1,80 @@
+# ================================================================
+# Florescer — .htaccess
+# Localização: /public/.htaccess
+# ================================================================
+
+# ── SEGURANÇA GERAL ─────────────────────────────────────────────
+
+Options -Indexes
+Options -ExecCGI
+ServerSignature Off
+
+# ── PROTEÇÃO DE ARQUIVOS SENSÍVEIS ──────────────────────────────
+
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
+
+<FilesMatch "\.(sql|log|bak|sh|env|ini|conf|htpasswd)$">
+  Require all denied
+</FilesMatch>
+
+# ── HEADERS DE SEGURANÇA ─────────────────────────────────────────
+
+<IfModule mod_headers.c>
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header unset X-Powered-By
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-src https://www.youtube.com; img-src 'self' data: https://img.youtube.com; connect-src 'self';"
+</IfModule>
+
+# ── ROTEAMENTO ───────────────────────────────────────────────────
+
+<IfModule mod_rewrite.c>
+RewriteEngine On  
+
+  # ── XAMPP: linha abaixo ativa ─────────────────────────────────
+  # Ajuste /florescer/public se o nome da sua pasta for diferente
+  # RewriteBase /florescer/public/
+  RewriteBase /florescer/public/
+
+  # ── HOSTINGER: comente a linha acima e descomente esta ────────
+  # RewriteBase /
+
+  # Redireciona HTTP para HTTPS em produção
+  # (descomente após configurar SSL no Hostinger)
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Permite acesso direto a arquivos e pastas que existem
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Rota padrão → index.php
+  RewriteRule ^ index.php [L]
+</IfModule>
+
+# ── PERFORMANCE ──────────────────────────────────────────────────
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css               "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/png              "access plus 1 year"
+  ExpiresByType image/svg+xml          "access plus 1 year"
+  ExpiresByType image/webp             "access plus 1 year"
+  ExpiresByType font/woff2             "access plus 1 year"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json
+</IfModule>
+
+# ── PROTEÇÃO EXTRA ───────────────────────────────────────────────
+
+<LimitExcept GET POST>
+  Require all denied
+</LimitExcept>
