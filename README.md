@@ -2,7 +2,7 @@
 
 > **Plante o hábito. Colha o conhecimento. Floresça de verdade.**
 
-**florescer** é uma plataforma de estudos completa, gratuita e focada em quem quer organizar a rotina, acompanhar a evolução e alcançar seus objetivos — tudo em um só lugar.
+**florescer** é uma plataforma de estudos completa, gratuita e focada em quem quer organizar a rotina, acompanhar a evolução e alcançar seus objetivos tudo em um só lugar.
 
 🔗 **[florescerapp.com.br](https://florescerapp.com.br/florescer/public/index.php)**
 
@@ -10,7 +10,7 @@
 
 ## ✨ Sobre o projeto
 
-O florescer nasceu da ideia de que estudar bem vai além de ter o conteúdo certo — é sobre construir um **caminho claro**, manter o **hábito** e celebrar cada conquista no processo.
+O florescer nasceu da ideia de que estudar bem vai além de ter o conteúdo certo é sobre construir um **caminho claro**, manter o **hábito** e celebrar cada conquista no processo.
 
 A plataforma reúne ferramentas de organização, acompanhamento, produtividade e comunidade em uma interface limpa e acessível para qualquer pessoa que queira focar de verdade nos estudos.
 
@@ -22,7 +22,7 @@ A plataforma reúne ferramentas de organização, acompanhamento, produtividade 
 Crie um objetivo de estudo, monte seu plano e organize suas matérias. Dentro de cada matéria, estruture o aprendizado por **unidades**, adicione **assuntos** e crie **aulas** com links do YouTube para estudar do seu jeito.
 
 ### 📚 Aulas e conteúdo
-- Navegação simples entre aulas — avance e volte quando quiser
+- Navegação simples entre aulas  avance e volte quando quiser
 - Crie novas aulas dentro de aulas existentes para um aprendizado ainda mais organizado
 - Links do YouTube integrados diretamente no conteúdo
 
@@ -48,7 +48,7 @@ Registre suas avaliações com até cinco notas diferentes e acompanhe sua evolu
 Acompanhe sua evolução ao longo do tempo e celebre cada conquista alcançada na jornada.
 
 ### 🗓️ Histórico
-Veja sua frequência de estudos em um calendário visual. Cada dia de dedicação fica registrado — motivação garantida.
+Veja sua frequência de estudos em um calendário visual. Cada dia de dedicação fica registrado motivação garantida.
 
 ### 💬 Chat
 Conecte-se com outros alunos da plataforma, tire dúvidas e faça parte de uma comunidade que estuda junto.
@@ -66,7 +66,7 @@ Gostou da plataforma? Contribua via **Pix ou QR Code** e ajude o florescer a cre
 Deixe sua opinião, reporte problemas e ajude a melhorar a plataforma a cada atualização.
 
 ### 👤 Perfil
-Gerencie suas informações pessoais, acompanhe seu desempenho geral e **compartilhe suas conquistas nos stories** — celebre cada passo da sua evolução.
+Gerencie suas informações pessoais, acompanhe seu desempenho geral e **compartilhe suas conquistas nos stories** celebre cada passo da sua evolução.
 
 ---
 
@@ -94,7 +94,7 @@ O florescer conta com um painel admin completo e seguro para gerenciamento da pl
 
 ---
 
-## 🚀 Em breve — Módulo Professores
+## 🚀 Em breve  Módulo Professores
 
 O florescer está desenvolvendo um módulo completo de professores particulares integrado à plataforma:
 
@@ -108,9 +108,9 @@ O florescer está desenvolvendo um módulo completo de professores particulares 
 - **Dashboard financeiro** com saldo, extrato e solicitação de saque via Pix
 - **Fila de correções** com sistema de notas por competências ENEM
 - **Agenda de aulas** com gerenciamento de horários disponíveis
-- **Chat seguro** com alunos — monitorado contra troca de contato externo
+- **Chat seguro** com alunos monitorado contra troca de contato externo
 - **Perfil verificado** com diploma, certificados e avaliações públicas
-- **Ranking** por avaliação — professores premium em destaque
+- **Ranking** por avaliação professores premium em destaque
 
 ### Modelo de comissão
 
@@ -198,14 +198,14 @@ florescer/
 
 ## 🔮 Roadmap
 
-- [x] Plataforma de estudos completa — objetivos, aulas, simulados, notas
-- [x] Ferramentas de produtividade — Pomodoro, anotações, calendário, trabalhos
-- [x] Gamificação — XP, níveis e streaks
+- [x] Plataforma de estudos completa ,objetivos, aulas, simulados, notas
+- [x] Ferramentas de produtividade, Pomodoro, anotações, calendário, trabalhos
+- [x] Gamificação, XP, níveis e streaks
 - [x] Chat entre alunos
 - [x] Loja de cursos
 - [x] Painel admin com 2FA e audit log
 - [x] Sistema de feedbacks
-- [ ] Módulo de professores — correção de redações e aulas particulares
+- [ ] Módulo de professores, correção de redações e aulas particulares
 - [ ] Integração completa com Mercado Pago
 - [ ] Correção de redação própria pela plataforma
 - [ ] Ranking global de alunos
