@@ -219,7 +219,7 @@ florescer/
 
 Desenvolvido por **Guilherme Silva**
 
-[![GitHub](https://img.shields.io/badge/GitHub-Guilherme--7-181717?style=flat&logo=github)](https://github.com/Guilherme-7)
+[![GitHub](https://img.shields.io/badge/GitHub-lGuilherme-7--7-181717?style=flat&logo=github)](https://github.com/lGuilherme-7)
 
 ---
 
